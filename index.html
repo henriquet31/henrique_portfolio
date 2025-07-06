@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henrique Tavares - Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <!-- Navegação Desktop -->
+    <header>
+        <nav id="desktop-nav">
+            <h1 class="logo">Henrique Tavares</h1>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#abilities">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+    <!-- Navegação Mobile -->
+        <nav id="hamburger-nav">
+        <h1 class="logo">Henrique Tavares</h1>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+            </div>
+            <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+            <li><a href="#abilities" onclick="toggleMenu()">Habilidades</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Perfil -->
+        <section id="profile">
+            <div class="section__pic-container">
+                <img class="profile-pic" src="./imagens/eu1.jpg" alt="Henrique Tavares" />
+            </div>
+            <div class="section__info-container">
+                <div class="section__text">
+                <p class="section__text__p1">Olá, me chamo</p>
+                <h1 class="title">Henrique Tavares</h1>
+                <p class="section__text__p2">Desenvolvedor Front-end</p>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./imagens/Luiz Henrique de Oliveira Tavares_Desenvolvedor Front-end.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./imagens/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/luiz-h-o-tavares'" />
+                    <img src="./imagens/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/henriquet31'" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about">
+            <h2 class="section__text__p1">Sobre mim</h2>
+            <div class="section-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img class="icon" src="./imagens/education.png" alt="Ícone de educação" />
+                        <h3>Educação</h3>
+                        <p>Análise e Desenvolvimento de Sistemas - UniCesumar</p>
+                        <p>Engenharia Front-end - EBAC</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                <p>
+                    Olá! Meu nome é Luiz Henrique, tenho 28 anos e sou um desenvolvedor Front-end apaixonado por tecnologia.
+                    Desde cedo, sempre tive curiosidade sobre o funcionamento de sites e páginas web, querendo entender como os
+                    desenvolvedores criavam experiências digitais incríveis e responsivas.
+                    Atualmente, estudo Análise e Desenvolvimento de Sistemas na UniCesumar e Engenharia Front-end na EBAC.
+                    Estou sempre em busca de novas técnicas e ferramentas para evoluir como desenvolvedor, criando soluções inovadoras.
+                </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="abilities">
+            <h2 class="title">Habilidades</h2>
+            <div class="abilities-details-container">
+                <div class="article-container">
+                <article><img src="./imagens/checkmark.png" alt="Ícone" class="icon" /><div><h3>HTML</h3></div></article>
+                <article><img src="./imagens/checkmark.png" alt="Ícone" class="icon" /><div><h3>CSS</h3></div></article>
+                <article><img src="./imagens/checkmark.png" alt="Ícone" class="icon" /><div><h3>JavaScript</h3></div></article>
+                <article><img src="./imagens/checkmark.png" alt="Ícone" class="icon" /><div><h3>jQuery</h3></div></article>
+                <article><img src="./imagens/checkmark.png" alt="Ícone" class="icon" /><div><h3>Sass</h3></div></article>
+                <article><img src="./imagens/checkmark.png" alt="Ícone" class="icon" /><div><h3>Bootstrap</h3></div></article>
+                <article><img src="./imagens/checkmark.png" alt="Ícone" class="icon" /><div><h3>React</h3></div></article>
+                </div>
+            </div>
+            </section>
+            <!-- Projetos -->
+            <section id="projects">
+            <h2 class="title">Projetos</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="./imagens/Clone disney+.png" alt="Clone Disney+" class="project-img" />
+                    <h3>Clone Disney+</h3>
+                    <p>
+                        Criação de um clone do Disney Plus em parceria com a EBAC,
+                        como forma de aprimorar habilidades em desenvolvimento web.
+                        Foram utilizadas as tecnologias HTML para estrutura,
+                        SCSS para estilização modular, JavaScript para interatividade e
+                        Gulp para otimização. O projeto reforçou o conhecimento técnico e ampliou a 
+                        compreensão sobre a arquitetura de aplicações modernas.
+                    </p>
+                    <a href="https://clone-disneyplus-six-amber.vercel.app/" target="_blank" class="btn btn-color-2">Ver Projeto</a>
+                    <a href="https://github.com/henriquet31/Clone_disneyplus" target="_blank" class="btn btn-color-1">Ver Código</a>
+                </div>
+                <div class="project-card">
+                    <img src="./imagens/Person Hardman.png" alt="Person Hardman" class="project-img" />
+                    <h3>Pearson Hardman</h3>
+                    <p>O projeto Person Hardman foi uma oportunidade de aplicar e aprofundar 
+                        conhecimentos em HTML, CSS e JavaScript no desenvolvimento de uma interface 
+                        web moderna e responsiva. A estrutura da aplicação foi cuidadosamente 
+                        construída com HTML, enquanto o CSS garantiu um design visual atrativo e 
+                        adaptável a diferentes dispositivos. Já o JavaScript trouxe interatividade e 
+                        dinamismo à experiência do usuário.
+                    </p>
+                    <a href="https://person-hardman-phi.vercel.app/" target="_blank" class="btn btn-color-2">Ver Projeto</a>
+                    <a href="https://github.com/henriquet31/Person-Hardman" target="_blank" class="btn btn-color-1">Ver Código</a>
+                </div>
+                <div class="project-card">
+                    <img src="./imagens/Cafeteria.png" alt="Cafeteria" class="project-img" />
+                    <h3>Cafeteria</h3>
+                    <p>
+                        O projeto de uma cafeteria foi uma excelente oportunidade para aplicar e 
+                        consolidar conhecimentos em HTML, CSS e Bootstrap no desenvolvimento de uma 
+                        interface web elegante, responsiva e funcional. A estrutura da página foi construída 
+                        com HTML, enquanto o CSS foi utilizado para ajustes visuais personalizados. 
+                        O uso do Bootstrap permitiu acelerar o desenvolvimento com componentes prontos e 
+                        garantir uma experiência consistente em diferentes dispositivos.
+                    </p>
+                    <a href="https://cafeteria-silk.vercel.app/" target="_blank" class="btn btn-color-2">Ver Projeto</a>
+                    <a href="https://github.com/henriquet31/cafeteria" target="_blank" class="btn btn-color-1">Ver Código</a>
+                </div>
+                <div class="project-card">
+                    <img src="./imagens/Evento ficticio.png" alt="Evento ficticio" class="project-img" />
+                    <h3>Ebac_tech_talks</h3>
+                    <p>
+                        Página de um evento fictício desenvolvida com HTML, SCSS, JavaScript e Parcel. 
+                        A estrutura foi construída com HTML semântico, o SCSS garantiu uma estilização modular e 
+                        escalável, e o JavaScript trouxe interatividade à interface. Com o uso do Parcel 
+                        como bundler, o projeto teve um fluxo de desenvolvimento ágil,
+                        com otimização de arquivos e recarregamento automático. 
+                        O resultado é uma página moderna, responsiva e com foco na experiência do usuário.
+                    </p>
+                    <a href="https://ebac-tech-talks-chi-swart.vercel.app/" target="_blank" class="btn btn-color-2">Ver Projeto</a>
+                    <a href="https://github.com/henriquet31/ebac_tech_talks" target="_blank" class="btn btn-color-1">Ver Código</a>
+                </div>
+                <div class="project-card">
+                    <img src="./imagens/calculadora imc.png" alt="Calculadora imc" class="project-img" />
+                    <h3>Ebac_tech_talks</h3>
+                    <p>
+                        O projeto da Calculadora de IMC foi desenvolvido com React com o objetivo de praticar 
+                        conceitos fundamentais da biblioteca, como componentes funcionais, manipulação de estado 
+                        com useState e renderização condicional. A aplicação permite que o usuário insira seu peso e altura,
+                        e com base nesses dados, calcula o Índice de Massa Corporal (IMC), exibindo o resultado junto com a 
+                        classificação correspondente (como "Peso ideal", "Sobrepeso", "Obesidade", etc.).
+                    </p>
+                    <a href="https://calculadora-imc-nhc2.vercel.app/" target="_blank" class="btn btn-color-2">Ver Projeto</a>
+                    <a href="https://github.com/henriquet31/Calculadora-IMC" target="_blank" class="btn btn-color-1">Ver Código</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="title">
+                <img src="./imagens/email.png" alt="Ícone de e-mail" class="icon" />
+                Contato
+            </h2>
+            <div class="contact-container">
+                <form action="https://formsubmit.co/seu-email@email.com" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Seu nome" required />
+                <input type="email" name="email" placeholder="Seu e-mail" required />
+                <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn btn-color-1">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2025 Henrique Tavares. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* Estilos para telas grandes (desktop) */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+/* Estilos para tablets médios e grandes (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    }
+
+    .menu-links.open {
+        max-height: 300px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    section {
+        scroll-margin-top: 80px;
+        margin: 0 2rem;
+    }
+
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #profile {
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .section__pic-container {
+        width: 250px;
+        height: auto;
+    }
+
+    .profile-pic {
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .article-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .abilities-details-container {
+        margin-top: 3rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Estilos para celulares e tablets pequenos (até 768px) */
+@media (max-width: 768px) {
+    .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    }
+
+    .menu-links.open {
+        max-height: 300px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .logo {
+    font-size: 1.5rem;
+    padding: 0.1rem 1rem;
+}
+
+    #profile {
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    section {
+        scroll-margin-top: 80px;
+        margin: 0 1.5rem;
+    }
+
+    .section-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section__pic-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-pic {
+        max-width: 180px;
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .article-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .abilities-details-container {
+        margin-top: 3rem;
+    }
+
+    #projects {
+    padding: 4rem 1rem;
+    }
+
+    .projects-container {
+    grid-template-columns: 1fr;
+    }
+
+    .project-card {
+    margin: 0 auto;
+    max-width: 90vw;
+    }
+}
