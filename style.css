@@ -340,6 +340,10 @@ section {
 }
 
 /* Habilidades */
+#abilities {
+    text-align: center;
+    height: 50vh;
+}
 .abilities-details-container {
     display: flex;
     flex-direction: column;
